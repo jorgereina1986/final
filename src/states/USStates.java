@@ -19,16 +19,24 @@ public class USStates {
 
         Map<Character, Integer> mapOfStates = new HashMap<Character, Integer>();
 
+        int counter;
         for(int i = 0; i < STATE_NAMES.length; i++)
         {
-            char letter = STATE_NAMES[i];
-            mapOfStates.put(STATE_NAMES[i],)
-            System.out.println(STATE_NAMES[i].charAt(0));
+            //getting first char of each state
+            char letter = STATE_NAMES[i].charAt(0);
+
+            if(STATE_NAMES[i] == STATE_NAMES[i])
+            {
+                counter++;
+            }
+
+            mapOfStates.put(letter, null);
+            System.out.println(letter);
         }
 
 
 
-        return null;
+        return mapOfStates;
     }
 
     public static void main(String[] args) {
